@@ -1,0 +1,76 @@
+body{
+  background-color: #2c2c54;
+}
+.App{
+  background-color: #474787;
+  margin: 50px auto;
+  max-width: 600px;
+  min-height: 500px;
+}
+.App {
+  box-shadow: 2px 2px 7px #ffffff;
+
+}
+#todo-form input{
+  background-color: #706fd3;
+  border: 0;
+  height: 50px;
+  padding: 0 20px;
+  margin:20px;
+  border-radius:10px
+}
+#todo-form input::placeholder{
+  color: #ffffff;
+}
+#todo-form input:focus{
+outline: none;
+}
+#todo-form button{
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #b33939;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+#todo-form button:focus{
+  outline: none;
+}
+/* list items */
+.list{
+  color: #ffffff;
+  width: 300px;
+  background-color: #303952;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 5px;
+  position: relative;
+}
+.list p{
+  padding: 10px;
+}
+.list p span{
+  position: absolute;
+  right: 10px;
+}
+.lnr{
+  margin: 3px 0;
+}
+.list p input{
+  background-color: transparent;
+  border: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+.list p input:focus{
+  outline: none;
+}
+.lnr-trash:hover{
+  cursor: pointer;
+}
+@media (min-width: 500px){
+  #todo-form input{
+  width: 300px;
+  }
+}
